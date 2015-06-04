@@ -39,7 +39,7 @@ public class LBPFeature extends ImageFeature {
         }
         // Average then divide by 4. The /4 is so that
         // we ignore smaller luminance changes of 4 levels or less.
-        lum[x][y] /= 3 * 4;
+        lum[x][y] = lum[x][y] / 3 * 4;
       }
     }
     lbpBin = new byte[width][height];
